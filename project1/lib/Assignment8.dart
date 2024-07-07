@@ -15,12 +15,12 @@ class Assignment8 extends StatelessWidget {
           Container(
             height: 100,
             width: 100,
-            color: Colors.red,
+            color: Color.fromARGB(255, 48, 255, 172),
           ),
           Container(
             height: 200,
             width: 200,
-            color: Colors.green,
+            color: Color.fromARGB(255, 181, 23, 147),
           )
         ],
       ),
