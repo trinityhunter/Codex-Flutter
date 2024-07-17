@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project6/Category_Horizontal_Component.dart';
-import 'package:project6/Movie_Image_Poster_Component.dart';
-
 class Assignment3 extends StatelessWidget {
   const Assignment3({super.key});
 
