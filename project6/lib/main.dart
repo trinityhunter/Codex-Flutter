@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:project6/Assignment1.dart';
 import 'package:project6/Assignment2.dart';
 import 'package:project6/Assignment3.dart';
+import 'package:project6/Netflix-Clone.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Assignment1()
+      home: NetflixClone()
     );
   }
 }

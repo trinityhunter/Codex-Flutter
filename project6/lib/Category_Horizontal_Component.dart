@@ -17,7 +17,7 @@ class CategoryHorizontalComponent extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Text(title, style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+          child: Text(title, style: TextStyle(fontSize: 25, fontWeight: FontWeight.w400, color: Colors.white)),
         ),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
