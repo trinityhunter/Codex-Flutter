@@ -22,7 +22,6 @@ class Bookscreen extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                
                 children: [
                   Container(
                     height: 50,
@@ -44,9 +43,8 @@ class Bookscreen extends StatelessWidget {
                       height: 50,
                       width: 50,
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black),
-                        borderRadius: BorderRadius.all(Radius.circular(10))
-                      ),
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
                       child: Image.asset("images/Filter.png"))
                 ],
               ),
@@ -56,16 +54,33 @@ class Bookscreen extends StatelessWidget {
                 child: Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Events(title: "Near By", imgUrl: "images/NearBy.png",),
-                    SizedBox(width: 12,),
-                    Events(title: "Book Room", imgUrl: "images/BookRoom.png",),
-                    SizedBox(width: 12,),
-                    Events(title: "Add Event", imgUrl: "images/AddEvent.png",),
+                    Events(
+                      title: "Near By",
+                      imgUrl: "images/NearBy.png",
+                    ),
+                    SizedBox(
+                      width: 12,
+                    ),
+                    Events(
+                      title: "Book Room",
+                      imgUrl: "images/BookRoom.png",
+                    ),
+                    SizedBox(
+                      width: 12,
+                    ),
+                    Events(
+                      title: "Add Event",
+                      imgUrl: "images/AddEvent.png",
+                    ),
                   ],
                 ),
               ),
-              Text("Category", style: GoogleFonts.poppins(color: Color(0xFF0D2D3A), fontSize: 24, fontWeight: FontWeight.w600, )),
-          
+              Text("Category",
+                  style: GoogleFonts.poppins(
+                    color: Color(0xFF0D2D3A),
+                    fontSize: 24,
+                    fontWeight: FontWeight.w600,
+                  )),
               Container(
                 margin: EdgeInsets.only(top: 10),
                 child: SingleChildScrollView(
@@ -80,21 +95,62 @@ class Bookscreen extends StatelessWidget {
                   ),
                 ),
               ),
-              Categorycard(imgUrl: "images/Hut1.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut2.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut1.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut2.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut1.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut2.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut1.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut2.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut1.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut2.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut1.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut2.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut1.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              Categorycard(imgUrl: "images/Hut2.png", title: "Wooden Hut", location: "Merbabu, Central Java"),
-              
+              Categorycard(
+                  imgUrl: "images/Hut1.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut2.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut1.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut2.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut1.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut2.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut1.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut2.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut1.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut2.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut1.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut2.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut1.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
+              Categorycard(
+                  imgUrl: "images/Hut2.png",
+                  title: "Wooden Hut",
+                  location: "Merbabu, Central Java"),
             ],
           ),
         ),

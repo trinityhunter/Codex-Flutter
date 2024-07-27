@@ -11,7 +11,10 @@ class Screen1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Screen 1", style: TextStyle(color: Colors.white),),
+        title: Text(
+          "Screen 1",
+          style: TextStyle(color: Colors.white),
+        ),
         backgroundColor: Color(0xFFB55656),
       ),
       body: Container(
@@ -32,16 +35,15 @@ class Screen1 extends StatelessWidget {
                 ),
               ),
               ElevatedButton(
-                style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Color(0xFF0075FE)), foregroundColor: WidgetStatePropertyAll(Colors.white)),
-                onPressed: () => {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (Context) => Screen2()
-                              )
-                          )
-                    },
-                child: Text("View Profile")),
+                  style: ButtonStyle(
+                      backgroundColor:
+                          WidgetStatePropertyAll(Color(0xFF0075FE)),
+                      foregroundColor: WidgetStatePropertyAll(Colors.white)),
+                  onPressed: () => {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (Context) => Screen2()))
+                      },
+                  child: Text("View Profile")),
             ],
           ),
         ),

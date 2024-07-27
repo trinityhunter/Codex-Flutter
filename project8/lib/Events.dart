@@ -66,7 +66,10 @@ class Events extends StatelessWidget {
           Container(
             child: Image.asset(imgUrl),
           ),
-          Text(title, style: GoogleFonts.poppins(),)
+          Text(
+            title,
+            style: GoogleFonts.poppins(),
+          )
         ],
       ),
     );

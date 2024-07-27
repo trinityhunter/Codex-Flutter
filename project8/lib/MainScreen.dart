@@ -37,17 +37,13 @@ class Mainscreen extends StatelessWidget {
             ),
             Expanded(
               child: Stack(
-                
                 children: [
-                  
                   Positioned.fill(
                     child: Image.asset(
                       "images/Resort.png",
-                      fit: BoxFit
-                          .cover,
+                      fit: BoxFit.cover,
                     ),
                   ),
-                  
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Container(
@@ -67,7 +63,7 @@ class Mainscreen extends StatelessWidget {
                       child: Row(
                         children: [
                           SizedBox(
-                            width: 84,
+                            width: 72,
                           ),
                           Text(
                             "for you.",

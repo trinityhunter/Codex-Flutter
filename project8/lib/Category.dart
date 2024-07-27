@@ -19,8 +19,10 @@ class Category extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(15)),
           color: Color(0xFF283048),
         ),
-        child:
-            Center(child: Text(title, style: GoogleFonts.poppins(color: Colors.white))),
+        child: Center(
+            child: Text(title,
+                style: GoogleFonts.poppins(
+                    color: const Color.fromARGB(255, 183, 111, 111)))),
       );
     }
 
@@ -30,10 +32,14 @@ class Category extends StatelessWidget {
       padding: EdgeInsets.all(10),
       margin: EdgeInsets.only(right: 10),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(15)),
-        border: Border.all(color: Color(0xFF283048), width: 2)
-      ),
-      child: Center(child: Text(title, style: GoogleFonts.poppins(color: Color(0xFF283048), fontSize: 12, fontWeight: FontWeight.w600))),
+          borderRadius: BorderRadius.all(Radius.circular(15)),
+          border: Border.all(color: Color(0xFF283048), width: 2)),
+      child: Center(
+          child: Text(title,
+              style: GoogleFonts.poppins(
+                  color: Color(0xFF283048),
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600))),
     );
   }
 }
