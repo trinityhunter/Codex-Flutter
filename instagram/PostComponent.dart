@@ -1,20 +1,7 @@
 import 'package:flutter/material.dart';
 
-class PostComponent extends StatefulWidget {
-  const PostComponent({super.key});
-
-  @override
-  State<PostComponent> createState() => _PostComponentState();
-}
-
-class _PostComponentState extends State<PostComponent> {
-  bool liked = false;
-
-  void handleLike() {
-    setState(() {
-      liked = !liked;
-    });
-  }
+class Postcomponent extends StatelessWidget {
+  const Postcomponent({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -67,58 +54,48 @@ class _PostComponentState extends State<PostComponent> {
                     )
                   ],
                 ),
-                const Icon(
-                  Icons.more_vert,
-                  color: Colors.white,
-                  size: 30,
-                )
+                Icon(Icons.more_vert, color: Colors.white, size: 30,)
               ],
             ),
             const SizedBox(
               height: 10,
             ),
-            InkWell(
-              onDoubleTap: handleLike,
-              child: Container(
-                height: 400,
-                color: const Color.fromARGB(255, 224, 112, 150),
-                child: Image.network(
-                  "https://tse2.mm.bing.net/th?id=OIP.bz3JOitzMOIgDIVYprTGvwHaF7&pid=Api&P=0&h=220",
-                  fit: BoxFit.cover,
-                ),
+            Container(
+              height: 400,
+              color: const Color.fromARGB(255, 224, 112, 150),
+              child: Image.network(
+                "https://tse2.mm.bing.net/th?id=OIP.bz3JOitzMOIgDIVYprTGvwHaF7&pid=Api&P=0&h=220",
+                fit: BoxFit.cover,
               ),
             ),
             const SizedBox(
               height: 10,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
                   children: [
-                    const SizedBox(
+                    SizedBox(
                       width: 10,
                     ),
-                    InkWell(
-                      onTap: handleLike,
-                      child: Icon(
-                        liked ? Icons.favorite : Icons.favorite_border,
-                        size: 40,
-                        color: liked ? Colors.red : Colors.white,
-                      ),
+                    Icon(
+                      Icons.favorite_border,
+                      size: 40,
+                      color: Colors.white,
                     ),
-                    const SizedBox(
+                    SizedBox(
                       width: 20,
                     ),
-                    const Icon(
+                    Icon(
                       Icons.comment_outlined,
                       size: 40,
                       color: Colors.white,
                     ),
-                    const SizedBox(
+                    SizedBox(
                       width: 20,
                     ),
-                    const Icon(
+                    Icon(
                       Icons.send,
                       size: 40,
                       color: Colors.white,
@@ -126,7 +103,7 @@ class _PostComponentState extends State<PostComponent> {
                   ],
                 ),
                 Row(
-                  children: const [
+                  children: [
                     SizedBox(
                       width: 20,
                     ),
@@ -140,16 +117,16 @@ class _PostComponentState extends State<PostComponent> {
               ],
             ),
             Container(
-              padding: const EdgeInsets.only(left: 10, top: 20),
-              child: const Text(
+              padding: EdgeInsets.only(left: 10, top: 20),
+              child: Text(
                 "27,989 likes",
                 style: TextStyle(color: Colors.white, fontSize: 15),
               ),
             ),
             Container(
-                padding: const EdgeInsets.only(left: 10, top: 10),
+                padding: EdgeInsets.only(left: 10, top: 10),
                 child: Row(
-                  children: const [
+                  children: [
                     Text(
                       "apple ",
                       style: TextStyle(
@@ -164,8 +141,8 @@ class _PostComponentState extends State<PostComponent> {
                   ],
                 )),
             Container(
-              padding: const EdgeInsets.only(left: 10, top: 10),
-              child: const Text(
+              padding: EdgeInsets.only(left: 10, top: 10),
+              child: Text(
                 "19 hours ago",
                 style: TextStyle(
                     color: Colors.white,

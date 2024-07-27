@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram/InstagramStoryComponent.dart';
-import 'package:instagram/PostComponent.dart';
+import '../PostComponent.dart';
 
 class Mainpage extends StatelessWidget {
   const Mainpage({super.key});
@@ -37,18 +37,18 @@ class Mainpage extends StatelessWidget {
           child: Column(
             children: [
               Instagramstorycomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
-              Postcomponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
+              PostComponent(),
             ],
           ),
         )
