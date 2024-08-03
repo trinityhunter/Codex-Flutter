@@ -28,6 +28,8 @@ class _OrderscreenState extends State<Orderscreen> {
 
     totalPrice -= price;
 
+    totalPrice = double.parse(totalPrice.toStringAsPrecision(3)); 
+
     setState(() {});
   }
 
@@ -35,6 +37,8 @@ class _OrderscreenState extends State<Orderscreen> {
     quantity++;
 
     totalPrice += price;
+
+    totalPrice = double.parse(totalPrice.toStringAsPrecision(2)); 
 
     setState(() {});
   }
@@ -265,7 +269,7 @@ class _OrderscreenState extends State<Orderscreen> {
                         ),
                       ),
                       Container(
-                          margin: EdgeInsets.only(left: 13, right: 13),
+                          margin: EdgeInsets.only(left: 8, right: 8),
                           child: Text(
                             "${quantity}",
                             style: GoogleFonts.sora(
