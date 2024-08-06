@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project12/LoginScreen.dart';
+import 'package:project12/ProfileScreen.dart';
 
 class Homescreen extends StatelessWidget {
   final String name;
@@ -18,18 +20,27 @@ class Homescreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    decoration: BoxDecoration(
-                        color: Colors.amber,
-                        borderRadius: BorderRadius.all(Radius.circular(40))),
-                  ),
-                  Text("Profile")
-                ],
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (Context) =>
+                              Profilescreen(name: name)));
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                          color: Colors.amber,
+                          borderRadius: BorderRadius.all(Radius.circular(40))),
+                    ),
+                    Text("Profile")
+                  ],
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -49,9 +60,18 @@ class Homescreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [Icon(Icons.settings, size: 50), Text("Settings")],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [Icon(Icons.logout, size: 50), Text("Logout")],
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (Context) =>
+                              Loginscreen()));
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [Icon(Icons.logout, size: 50), Text("Logout")],
+                ),
               ),
             ],
           ),
