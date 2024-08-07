@@ -53,6 +53,7 @@ class _LoginformState extends State<Loginscreen> {
                   decoration: InputDecoration(
                     hintText: "Name",
                   ),
+                  
                 ),
               ),
             ),
