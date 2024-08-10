@@ -56,10 +56,10 @@ class _MessagesState extends State<Messages> {
                     )
                   ],
                 ),
-                Icon(
-                  Icons.more_vert,
-                  color: Colors.white,
-                  size: 30,
+                Container(
+                  height: 30,
+                  width: 30,
+                  child: Image.asset("images/write.png", color: Colors.white,),
                 )
               ],
             ),

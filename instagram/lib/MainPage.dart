@@ -349,14 +349,18 @@ class _MainpageState extends State<Mainpage> {
           } else if (value == 2) {
             Navigator.push(context,
                 MaterialPageRoute(builder: (Context) => Addpostpage()));
-          }
-          else if(value == 3){
-            Navigator.push(context,
-                MaterialPageRoute(builder: (Context) => Reelspage()));
-          }
-          else if(value == 4){
-            Navigator.push(context,
-                MaterialPageRoute(builder: (Context) => Profilepage(imgUrl: "images/ProfilePlaceholder.jpg", name: "ravirajbhosale22", isDefault: true,)));
+          } else if (value == 3) {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (Context) => Reelspage()));
+          } else if (value == 4) {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (Context) => Profilepage(
+                          imgUrl: "images/ProfilePlaceholder.jpg",
+                          name: "ravirajbhosale22",
+                          isDefault: true,
+                        )));
           }
         },
       ),
