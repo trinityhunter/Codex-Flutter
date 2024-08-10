@@ -282,7 +282,7 @@ class _ProfilepageState extends State<Profilepage> {
                 ],
               ),
             ),
-        
+
             // Profileposts(imgUrl: widget.imgUrl),
             // Profileposts(imgUrl: widget.imgUrl),
             // Profileposts(imgUrl: widget.imgUrl),
