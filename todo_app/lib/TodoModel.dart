@@ -17,12 +17,12 @@ class TodoModel {
 
   factory TodoModel.fromJson(Map<String, dynamic> json) {
     return TodoModel(
-      id: json['_id'],
-      title: json['title'],
-      description: json['description'],
-      dueDate: json['dueDate'],
-      priority: json['priority'],
-      completed: json['completed'],
+      id: json['_id'] ?? '',
+      title: json['title'] ?? 'No Title',
+      dueDate: json['dueDate'] ?? '',
+      priority: json['priority'] ?? 'low',
+      description: json['description'] ?? '',
+      completed: json['completed'] ?? false,
     );
   }
 

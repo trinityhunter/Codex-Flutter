@@ -27,6 +27,7 @@ class _HomepageState extends State<Homepage> {
 
     if (response.statusCode == 200) {
       List data = json.decode(response.body);
+      // debugPrint(data[0]["_id"]);
       return data.map((todo) => TodoModel.fromJson(todo)).toList();
     } else {
       throw Exception('Failed to load todos');
@@ -34,6 +35,8 @@ class _HomepageState extends State<Homepage> {
   }
 
   Future<void> deleteTodo(String id) async {
+    debugPrint(id);
+
     final response = await http.delete(Uri.parse('$baseUrl/delete/$id'));
 
     if (response.statusCode == 200) {
@@ -59,6 +62,7 @@ class _HomepageState extends State<Homepage> {
   fetchTodos() async {
     try {
       var fetchedTodos = await getTodos();
+      debugPrint(fetchedTodos[0].id);
       setState(() {
         todos = fetchedTodos;
       });
@@ -141,7 +145,7 @@ class _HomepageState extends State<Homepage> {
                       ),
                       SizedBox(height: 8),
                       Text(
-                        'Due Date: ${todos[index].dueDate.substring(0, 10)}',
+                        'Due Date: ${todos[index].dueDate != null && todos[index].dueDate.length >= 10 ? todos[index].dueDate.substring(0, 10) : 'Invalid Date'}',
                         style: TextStyle(fontSize: 14, color: Colors.grey[600]),
                       ),
                       Row(
